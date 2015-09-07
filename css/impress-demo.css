@@ -701,3 +701,130 @@ a:focus {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+
+#initialize {
+    text-align: center;
+    padding-top: 4em;
+}
+
+#initialize img {
+    width: 520px;
+    margin-bottom: 2em
+}
+
+.alert {
+    text-align: center;
+    padding-top: 7em;
+}
+
+.firebug {
+    text-align: center;
+    padding-top: 6em;
+}
+
+.browsers .opera, .browsers .safari {
+    margin-bottom: 3.5em;
+}
+
+.browsers .opera, .browsers .firefox {
+    margin-right: 1em;
+}
+
+.drag-drop h3 {
+    font-size: 1.6em;
+}
+
+.drag-drop ul {
+    margin-top: 2em;
+    text-align: left;
+}
+
+.drag-drop ul li.title {
+    font-weight: bold;
+    color: black;
+}
+
+.drag-drop ul li.title:after {
+    content: "";
+}
+
+.drag-drop span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	width: 100%;
+	color: blue;
+	left: 0;
+}
+
+.drag-drop span{
+	animation: rotateWord 18s linear infinite 0s;
+}
+
+.drag-drop span:nth-child(2) { 
+	animation-delay: 3s;
+}
+
+.drag-drop span:nth-child(3) { 
+	animation-delay: 6s; 
+}
+
+.drag-drop span:nth-child(4) { 
+	animation-delay: 9s; 
+}
+
+.drag-drop span:nth-child(5) { 
+	animation-delay: 12s; 
+}
+
+.drag-drop span:nth-child(6) {  
+	animation-delay: 15s; 
+}
+
+.real-time {
+    display: block;
+    margin-top: 1em;
+}
+
+@-ms-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -ms-transform: translateY(-30px); }
+	5% { opacity: 1; -ms-transform: translateY(0px);}
+    17% { opacity: 1; -ms-transform: translateY(0px); }
+	20% { opacity: 0; -ms-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWord {
+    0% { opacity: 0; }@-webkit-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.drag-drop .g4 li {
+    color: green;
+}
+
+.drag-drop .g4 li:after {
+    content: " =)";
+}
+
+.drag-drop .zr li {
+    color: red;
+}
+
+.drag-drop .zr li:after {
+    content: " =(";
+}
