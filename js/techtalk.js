@@ -56,6 +56,6 @@ form.querySelector("#send").onclick = function(event) {
 }
 
 function insertAnswer(answer) {
-    document.querySelector("#ask-form span").innetHTML = answer;
+    document.querySelector("#ask-form span").innerHTML = answer;
     form.querySelector("#ask").value = "";
 }

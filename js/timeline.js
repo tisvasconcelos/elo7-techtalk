@@ -26,7 +26,7 @@ document.querySelector("#change-link").onclick = function() {
 //     var as = document.querySelectorAll("a");
 
 //     [].forEach.call(as, function(a){
-//        a.style = "color: red;";
+//        a.style.color = "red";
 //     });
 
 //     console.timeEnd("Tempo para alterar o link mais performatico");
