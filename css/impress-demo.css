@@ -308,7 +308,7 @@ a:focus {
 /*
     'Tiny ideas' just need some tiny styling.
 */
-#tiny {
+#elements {
     width: 500px;
     text-align: center;
 }
@@ -682,7 +682,7 @@ a:focus {
 
     So use it wisely ... or don't use at all.
 */
-.impress-enabled          { pointer-events: none }
+.impress-enabled          { pointer-events: none;}
 .impress-enabled #impress { pointer-events: auto }
 
 /*
@@ -817,6 +817,10 @@ a:focus {
     color: green;
 }
 
+.drag-drop .g4 li:hover {
+    color: blueviolet;
+}
+
 .drag-drop .g4 li:after {
     content: " =)";
 }
@@ -827,4 +831,45 @@ a:focus {
 
 .drag-drop .zr li:after {
     content: " =(";
+}
+
+.hide {
+    display: none;
+}
+
+#answer-media img {
+    width: 40%;
+    border-radius: 100%;
+}
+
+.blink {
+    animation: blink 1s steps(5, start) infinite;
+    -webkit-animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        opacity: 0.8;
+    }
+}
+
+#iframe {
+    width: 100%;
+    height: 90%;
+}
+
+#thanks h2 {
+    width: 100%;
+    text-align:left;
+    margin-bottom: 1em;
+}
+
+#thanks img {
+    float: left;
+}
+
+#thanks ul {
+    float: left;
+    margin-left: 2em;
+    text-align: left;
 }
